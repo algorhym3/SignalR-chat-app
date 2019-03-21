@@ -4,30 +4,76 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  height: 80px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.stayAtBottomInput
+{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*Message CSS*/
+.message-user-details{
+  display:inline-flex;
+}
+.message-user-img{
+  width:60px; 
+  height:60px;
+}
+
+.mainContainer
+{
+  display: flex;
+  flex-direction: column;
+  margin:2rem;
+}
+
+.SenderInfoContainer
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.UserNameAndTimeContainer
+{
+  display: flex;
+  flex-direction: column;
+  align-self:center;
+  margin-left: 1rem;
+  align-items: flex-start;
+}
+
+.messageContainer
+{
+  background-color: #FFFCE6;
+  margin-top: 1rem;
+  align-self: flex-start;
+  border-radius: 14px;
+    padding: 0.7rem;
+}
+.scrollableContainer
+{
+  overflow-y: scroll;
 }
